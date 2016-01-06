@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Editor Defaults feature.
+ */
+
+include_once 'editor_defaults.features.inc';

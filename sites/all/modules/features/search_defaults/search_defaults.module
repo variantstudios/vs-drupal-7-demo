@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Search Defaults feature.
+ */
+
+include_once 'search_defaults.features.inc';

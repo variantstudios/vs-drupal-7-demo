@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Performance Defaults feature.
+ */
+
+include_once 'performance_defaults.features.inc';

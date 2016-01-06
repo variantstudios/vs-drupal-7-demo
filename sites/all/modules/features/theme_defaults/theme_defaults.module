@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Theme Defaults feature.
+ */
+
+include_once 'theme_defaults.features.inc';

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Context Defaults feature.
+ */
+
+include_once 'context_defaults.features.inc';

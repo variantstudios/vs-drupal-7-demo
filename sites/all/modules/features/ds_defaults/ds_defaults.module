@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the DS Defaults feature.
+ */
+
+include_once 'ds_defaults.features.inc';

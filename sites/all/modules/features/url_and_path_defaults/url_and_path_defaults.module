@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the URL and Path Defaults feature.
+ */
+
+include_once 'url_and_path_defaults.features.inc';

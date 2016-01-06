@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the XML Sitemap Defaults feature.
+ */
+
+include_once 'xml_sitemap_defaults.features.inc';

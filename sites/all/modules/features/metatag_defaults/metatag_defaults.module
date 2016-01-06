@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the MetaTag Defaults feature.
+ */
+
+include_once 'metatag_defaults.features.inc';
