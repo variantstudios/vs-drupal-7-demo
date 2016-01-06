@@ -98,7 +98,7 @@ function vs_url_and_path_defaults_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_pattern';
-  $strongarm->value = '[node:title]';
+  $strongarm->value = 'content/[node:title]';
   $export['pathauto_node_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -203,7 +203,7 @@ function vs_url_and_path_defaults_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_punctuation_hyphen';
-  $strongarm->value = '1';
+  $strongarm->value = 1;
   $export['pathauto_punctuation_hyphen'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -378,12 +378,7 @@ function vs_url_and_path_defaults_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'path_alias_whitelist';
-  $strongarm->value = array(
-    'file' => TRUE,
-    'node' => TRUE,
-    'taxonomy' => TRUE,
-    'user' => TRUE,
-  );
+  $strongarm->value = array();
   $export['path_alias_whitelist'] = $strongarm;
 
   return $export;

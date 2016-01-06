@@ -25,7 +25,6 @@ function vs_metatag_defaults_metatag_export_default() {
   // Exported Metatag config instance: global.
   $config['global'] = array(
     'instance' => 'global',
-    'disabled' => FALSE,
     'config' => array(
       'title' => array(
         'value' => '[current-page:title] | [site:name]',
@@ -45,7 +44,6 @@ function vs_metatag_defaults_metatag_export_default() {
   // Exported Metatag config instance: global:403.
   $config['global:403'] = array(
     'instance' => 'global:403',
-    'disabled' => FALSE,
     'config' => array(
       'canonical' => array(
         'value' => '[site:url]',
@@ -59,7 +57,6 @@ function vs_metatag_defaults_metatag_export_default() {
   // Exported Metatag config instance: global:404.
   $config['global:404'] = array(
     'instance' => 'global:404',
-    'disabled' => FALSE,
     'config' => array(
       'canonical' => array(
         'value' => '[site:url]',
@@ -73,7 +70,6 @@ function vs_metatag_defaults_metatag_export_default() {
   // Exported Metatag config instance: global:frontpage.
   $config['global:frontpage'] = array(
     'instance' => 'global:frontpage',
-    'disabled' => FALSE,
     'config' => array(
       'title' => array(
         'value' => '[site:name]',
@@ -90,7 +86,6 @@ function vs_metatag_defaults_metatag_export_default() {
   // Exported Metatag config instance: node.
   $config['node'] = array(
     'instance' => 'node',
-    'disabled' => FALSE,
     'config' => array(
       'title' => array(
         'value' => '[node:title] | [site:name]',
@@ -104,7 +99,6 @@ function vs_metatag_defaults_metatag_export_default() {
   // Exported Metatag config instance: user.
   $config['user'] = array(
     'instance' => 'user',
-    'disabled' => FALSE,
     'config' => array(
       'title' => array(
         'value' => '[user:name] | [site:name]',
@@ -115,7 +109,6 @@ function vs_metatag_defaults_metatag_export_default() {
   // Exported Metatag config instance: view.
   $config['view'] = array(
     'instance' => 'view',
-    'disabled' => FALSE,
     'config' => array(
       'title' => array(
         'value' => '[view:title] | [site:name]',

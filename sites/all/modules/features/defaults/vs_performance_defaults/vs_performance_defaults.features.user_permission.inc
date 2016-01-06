@@ -13,9 +13,7 @@ function vs_performance_defaults_user_default_permissions() {
   // Exported permission: 'bypass advanced aggregation'.
   $permissions['bypass advanced aggregation'] = array(
     'name' => 'bypass advanced aggregation',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'advagg',
   );
 

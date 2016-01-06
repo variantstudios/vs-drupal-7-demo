@@ -2,6 +2,7 @@ name = Menu Defaults
 description = Includes menus needed for site
 core = 7.x
 package = Defaults
+version = 7.x-1.0
 dependencies[] = features
 dependencies[] = menu
 features[features_api][] = api:2
