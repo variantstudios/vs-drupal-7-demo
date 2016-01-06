@@ -25,6 +25,7 @@ function vs_url_and_path_defaults_user_default_permissions() {
     'name' => 'administer url aliases',
     'roles' => array(
       'administrator' => 'administrator',
+      'manager' => 'manager',
     ),
     'module' => 'path',
   );

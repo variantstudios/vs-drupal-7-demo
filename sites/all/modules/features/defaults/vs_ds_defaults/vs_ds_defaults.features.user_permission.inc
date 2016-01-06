@@ -13,35 +13,45 @@ function vs_ds_defaults_user_default_permissions() {
   // Exported permission: 'admin_classes'.
   $permissions['admin_classes'] = array(
     'name' => 'admin_classes',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'ds_ui',
   );
 
   // Exported permission: 'admin_display_suite'.
   $permissions['admin_display_suite'] = array(
     'name' => 'admin_display_suite',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'ds',
   );
 
   // Exported permission: 'admin_fields'.
   $permissions['admin_fields'] = array(
     'name' => 'admin_fields',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'ds_ui',
   );
 
   // Exported permission: 'admin_view_modes'.
   $permissions['admin_view_modes'] = array(
     'name' => 'admin_view_modes',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'ds_ui',
   );
 
   // Exported permission: 'use text format ds_code'.
   $permissions['use text format ds_code'] = array(
     'name' => 'use text format ds_code',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'filter',
   );
 

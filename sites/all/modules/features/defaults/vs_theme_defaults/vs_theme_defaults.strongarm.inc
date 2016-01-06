@@ -114,6 +114,9 @@ function vs_theme_defaults_strongarm() {
   $strongarm->name = 'ie6update_ie_versions';
   $strongarm->value = array(
     'IE 6' => 'IE 6',
+    'IE 7' => 'IE 7',
+    'IE 8' => 'IE 8',
+    'IE 9' => 0,
   );
   $export['ie6update_ie_versions'] = $strongarm;
 

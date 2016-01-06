@@ -215,7 +215,7 @@ function vs_webform_content_type_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'webform_default_from_name';
-  $strongarm->value = 'Drupal';
+  $strongarm->value = '%site:name';
   $export['webform_default_from_name'] = $strongarm;
 
   $strongarm = new stdClass();

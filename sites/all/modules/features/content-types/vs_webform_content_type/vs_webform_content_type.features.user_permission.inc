@@ -93,7 +93,9 @@ function vs_webform_content_type_user_default_permissions() {
   // Exported permission: 'ds_switch webform'.
   $permissions['ds_switch webform'] = array(
     'name' => 'ds_switch webform',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'ds_extras',
   );
 

@@ -53,6 +53,7 @@ function vs_user_defaults_user_default_permissions() {
     'name' => 'change own username',
     'roles' => array(
       'administrator' => 'administrator',
+      'manager' => 'manager',
     ),
     'module' => 'user',
   );
@@ -62,6 +63,7 @@ function vs_user_defaults_user_default_permissions() {
     'name' => 'select account cancellation method',
     'roles' => array(
       'administrator' => 'administrator',
+      'manager' => 'manager',
     ),
     'module' => 'user',
   );

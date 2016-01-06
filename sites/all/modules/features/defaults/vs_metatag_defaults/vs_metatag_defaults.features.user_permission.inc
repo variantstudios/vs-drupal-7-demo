@@ -13,14 +13,20 @@ function vs_metatag_defaults_user_default_permissions() {
   // Exported permission: 'administer meta tags'.
   $permissions['administer meta tags'] = array(
     'name' => 'administer meta tags',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+      'manager' => 'manager',
+    ),
     'module' => 'metatag',
   );
 
   // Exported permission: 'edit meta tags'.
   $permissions['edit meta tags'] = array(
     'name' => 'edit meta tags',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+      'manager' => 'manager',
+    ),
     'module' => 'metatag',
   );
 
