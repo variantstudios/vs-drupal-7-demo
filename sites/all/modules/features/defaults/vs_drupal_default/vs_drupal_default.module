@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Drupal Default feature.
+ */
+
+include_once 'vs_drupal_default.features.inc';

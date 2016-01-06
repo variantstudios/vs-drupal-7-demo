@@ -1,0 +1,17 @@
+name = Views Defaults
+core = 7.x
+package = Defaults
+version = 7.x-1.0
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = metatag_views
+dependencies[] = view_unpublished
+dependencies[] = views
+dependencies[] = views_ui
+dependencies[] = views_ui_basic
+features[features_api][] = api:2
+features[user_permission][] = access all views
+features[user_permission][] = administer views
+features[user_permission][] = use ctools import
+features[user_permission][] = view any unpublished content
+project path = sites/all/modules/features/defaults

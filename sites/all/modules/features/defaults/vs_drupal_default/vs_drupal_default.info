@@ -1,0 +1,14 @@
+name = Drupal Defaults
+description = Add the general site defaults to this feature. Most of these settings are from the "Site information" page.
+core = 7.x
+package = Defaults
+version = 7.x-1.0
+project = vs_drupal_default
+dependencies[] = ctools
+dependencies[] = strongarm
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[variable][] = site_403
+features[variable][] = site_404
+features[variable][] = site_default_country
+project path = sites/all/modules/features/defaults
