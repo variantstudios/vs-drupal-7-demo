@@ -1,8 +1,0 @@
-name = Field Collection Defaults
-core = 7.x
-package = Defaults
-version = 7.x-1.0
-dependencies[] = features
-dependencies[] = field_collection
-features[features_api][] = api:2
-features[user_permission][] = administer field collections

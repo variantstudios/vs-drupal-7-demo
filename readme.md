@@ -10,4 +10,8 @@
 	1. $ drush en features -y
 	2.
 	3. 
-5. 
+5. Login to the Drupal site:
+	1. go to '/admin/structure/features' and enable all of the features in the 'defaults' tab.
+	2. Rebuild permissions by going to '/admin/reports/status/rebuild'
+	3. 
+6. 

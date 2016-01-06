@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Editor Defaults feature.
+ */
+
+include_once 'vs_editor_defaults.features.inc';

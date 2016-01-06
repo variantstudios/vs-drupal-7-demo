@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Feeds Defaults feature.
- */
-
-include_once 'feeds_defaults.features.inc';
