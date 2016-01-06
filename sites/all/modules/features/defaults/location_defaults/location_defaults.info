@@ -1,0 +1,14 @@
+name = Location Defaults
+description = Location Module Defaults
+core = 7.x
+package = Defaults
+version = 7.x-1.0
+dependencies[] = geofield
+dependencies[] = geophp
+dependencies[] = la
+dependencies[] = leaflet
+dependencies[] = leaflet_views
+dependencies[] = location
+dependencies[] = location_cck
+features[features_api][] = api:2
+project path = sites/all/modules/features/defaults

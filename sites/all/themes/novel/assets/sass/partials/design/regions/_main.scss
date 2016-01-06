@@ -1,4 +1,5 @@
 main {
   @include clearfix;
-  background-color: $main-bg;
+  background: $main-bg url('../images/main-bg.jpg') repeat;
+  padding: 2em 0;
 }

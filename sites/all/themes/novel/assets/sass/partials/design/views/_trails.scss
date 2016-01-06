@@ -1,0 +1,25 @@
+.view-trails.view-display-id-page {
+  .views-row {
+    padding: 1em 0;
+  }
+}
+
+.node-trails.node-teaser {
+  .section-one {
+    h2, .field-name-field-region {
+      @include breakpoint($tablet, $no-query: '.no-mq') {
+        display: inline-block;
+        padding-right: 1em;
+        vertical-align: middle;
+      }
+      .field-label, .field-items {
+        display: inline-block;
+      }
+    }
+  }
+  .section-two {
+    p {
+      margin-bottom: 0;
+    }
+  }
+}

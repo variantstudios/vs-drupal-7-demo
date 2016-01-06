@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Trails View feature.
+ */
+
+include_once 'vs_trails_view.features.inc';

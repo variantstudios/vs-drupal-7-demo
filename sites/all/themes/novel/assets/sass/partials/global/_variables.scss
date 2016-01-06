@@ -6,8 +6,8 @@ $rem: 16px;
 
 // Colors
 // Sites Main Colors
-$color-one: #52BAD5; // Blue
-$color-two: #84D097; // Green
+$color-one: #489B6E; // Green
+$color-two: #D79111; // Orange
 $color-three: #A1A1A1; // Grey
 
 // Regions - Use Site Main Colors variables for these if they fit
@@ -20,7 +20,7 @@ $footer-bg: #333;
 $body-copy-color: #424242;
 $heading-color: #373737;
 $link           : $color-one;
-$visited        : darken($link, 20%);
+$visited        : $color-one;
 $hover          : lighten($link, 20%);
 
 /* validation Colors */

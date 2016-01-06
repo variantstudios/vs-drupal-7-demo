@@ -215,7 +215,7 @@ function vs_static_page_content_type_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'page_compression';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['page_compression'] = $strongarm;
 
   $strongarm = new stdClass();

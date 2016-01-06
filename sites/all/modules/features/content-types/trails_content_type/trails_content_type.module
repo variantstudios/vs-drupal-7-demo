@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Trails Content Type feature.
+ */
+
+include_once 'trails_content_type.features.inc';

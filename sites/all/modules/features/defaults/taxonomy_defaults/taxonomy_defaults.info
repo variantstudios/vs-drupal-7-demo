@@ -1,0 +1,6 @@
+name = Taxonomy Defaults
+core = 7.x
+package = Defaults
+dependencies[] = taxonomy
+features[features_api][] = api:2
+project path = sites/all/modules/features/defaults

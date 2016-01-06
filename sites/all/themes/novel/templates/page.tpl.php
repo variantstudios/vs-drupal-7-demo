@@ -1,4 +1,4 @@
-<header role="banner">
+<header class="site-header" role="banner">
   <div class="wrap">
     <!-- Logo -->
     <picture class="logo">
@@ -6,15 +6,17 @@
       <img src="/sites/all/themes/novel/assets/images/logos/logo.png" alt="Put the site name here">
     </picture>
 
-  </div>
-  <!-- Main Navigation -->
-  <?php if ($page['main_nav']): ?>
-    <nav role="navigation">
-      <?php print render($page['main_nav']); ?>
-    </nav>
-  <?php endif; ?>
+    <!-- Main Navigation -->
+    <?php if ($page['main_nav']): ?>
+      <nav class="main-nav" role="navigation">
+        <?php print render($page['main_nav']); ?>
+      </nav>
+    <?php endif; ?>
+
+    </div>
 </header>
 <!-- Close Header -->
+
 <?php if ($page['preface']): ?>
   <div class="preface cleafix">
     <div class="wrap">
@@ -22,8 +24,9 @@
     </div>
   </div>
 <?php endif; ?>
+
 <!-- Close Preface -->
-<main role="main" id="content">
+<main id="content">
   <div class="wrap">
     <?php if ($page['help']): ?>
         <?php print render($page['help']); ?>
@@ -46,6 +49,7 @@
     <?php endif; ?>
   </div>
 </main>
+
 <footer>
   <?php if ($page['footer']): ?>
     <div class="wrap">

@@ -1,0 +1,35 @@
+// Icons
+.field-name-field-difficulty, .field-name-field-region, .field-name-field-distance {
+  @include breakpoint($tablet, $no-query: '.no-mq') {
+    display: inline-block;
+    padding-right: 2em;
+  }
+  .field-label, .field-items {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .field-label {
+    @include hide-text;
+    background: url('../images/icons/location.svg');
+    width: 14px;
+    height: 20px;
+    display: inline-block;
+    margin-right: .5em;
+  }
+}
+
+.field-name-field-difficulty {
+  .field-label {
+    background: url('../images/icons/difficult.svg');
+    width: 26px;
+    height: 14px;
+  }
+}
+
+.field-name-field-distance {
+  .field-label {
+    background: url('../images/icons/distance.svg');
+    width: 13px;
+    height: 23px;
+  }
+}
