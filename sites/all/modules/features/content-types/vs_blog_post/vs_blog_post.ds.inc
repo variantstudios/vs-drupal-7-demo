@@ -55,7 +55,7 @@ function vs_blog_post_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'teaser';
   $ds_fieldsetting->settings = array(
     'title' => array(
-      'weight' => '1',
+      'weight' => '2',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
@@ -66,9 +66,27 @@ function vs_blog_post_ds_field_settings_info() {
       ),
     ),
     'post_date' => array(
-      'weight' => '2',
+      'weight' => '1',
       'label' => 'hidden',
-      'format' => 'ds_post_date_long',
+      'format' => 'ds_post_date_short',
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => 'post-date',
+          'ow-def-cl' => FALSE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_header_image' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+        ),
+      ),
     ),
   );
   $export['node|vs_blog_post|teaser'] = $ds_fieldsetting;
@@ -123,28 +141,25 @@ function vs_blog_post_ds_layout_settings_info() {
   $ds_layout->entity_type = 'node';
   $ds_layout->bundle = 'vs_blog_post';
   $ds_layout->view_mode = 'teaser';
-  $ds_layout->layout = 'custom_2_col';
+  $ds_layout->layout = 'ds_1col';
   $ds_layout->settings = array(
     'regions' => array(
-      'one' => array(
-        0 => 'field_main_image',
-      ),
-      'two' => array(
-        1 => 'title',
-        2 => 'post_date',
+      'ds_content' => array(
+        0 => 'field_header_image',
+        1 => 'post_date',
+        2 => 'title',
         3 => 'body',
       ),
     ),
     'fields' => array(
-      'field_main_image' => 'one',
-      'title' => 'two',
-      'post_date' => 'two',
-      'body' => 'two',
+      'field_header_image' => 'ds_content',
+      'post_date' => 'ds_content',
+      'title' => 'ds_content',
+      'body' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(
-      'one' => 'div',
-      'two' => 'div',
+      'ds_content' => 'div',
     ),
     'layout_wrapper' => 'div',
     'layout_attributes' => '',

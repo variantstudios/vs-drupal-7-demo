@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Gallery View feature.
+ */
+
+include_once 'vs_gallery_view.features.inc';

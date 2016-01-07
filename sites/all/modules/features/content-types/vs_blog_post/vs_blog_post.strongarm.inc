@@ -124,7 +124,7 @@ function vs_blog_post_strongarm() {
           'weight' => '5',
         ),
         'title' => array(
-          'weight' => '1',
+          'weight' => '0',
         ),
         'path' => array(
           'weight' => '4',
@@ -134,6 +134,9 @@ function vs_blog_post_strongarm() {
         ),
         'xmlsitemap' => array(
           'weight' => '2',
+        ),
+        'locations' => array(
+          'weight' => '6',
         ),
       ),
       'display' => array(),
@@ -182,7 +185,7 @@ function vs_blog_post_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_submitted_vs_blog_post';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['node_submitted_vs_blog_post'] = $strongarm;
 
   $strongarm = new stdClass();

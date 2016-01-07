@@ -16,7 +16,18 @@
   
   
   $('.slider').unslider({
-    //autoplay: true 
+    autoplay: true 
+  });
+
+  $('.open-gallery-filter').click(function() {
+    $('.gallery .view-filters').toggleClass('opened');
+    $('body').toggleClass('dim');
+    $('.close-gallery-filter').toggleClass('show');
+  });
+   $('.close-gallery-filter').click(function() {
+    $('.gallery .view-filters').toggleClass('opened');
+    $('body').toggleClass('dim');
+    $('.close-gallery-filter').toggleClass('show');
   });
 
   });

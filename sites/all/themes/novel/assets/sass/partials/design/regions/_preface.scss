@@ -1,6 +1,10 @@
-.front .preface {
-   position: absolute;
+.preface {
+    position: relative;
     top: 0;
-    z-index: -1;
-    height: 750px;
-}
+    height: 450px;
+    margin-top: -100px;
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+      height: 750px;
+    }
+
+  }

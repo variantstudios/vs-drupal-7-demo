@@ -40,20 +40,9 @@ function vs_home_view_views_default_views() {
   $handler->display->display_options['fields']['field_images']['label'] = '';
   $handler->display->display_options['fields']['field_images']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_images']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_images']['type'] = 'picture';
   $handler->display->display_options['fields']['field_images']['settings'] = array(
-    'picture_mapping' => 'slider_settings',
-    'fallback_image_style' => '',
-    'lazyload' => 0,
-    'lazyload_aspect_ratio' => 0,
+    'image_style' => 'slider_large',
     'image_link' => '',
-    'colorbox_settings' => array(
-      'colorbox_group' => 'slider_settings',
-      'colorbox_gallery' => 'post',
-      'colorbox_gallery_custom' => '',
-      'colorbox_caption' => 'auto',
-      'colorbox_caption_custom' => '',
-    ),
   );
   $handler->display->display_options['fields']['field_images']['delta_limit'] = '1';
   $handler->display->display_options['fields']['field_images']['delta_offset'] = '0';

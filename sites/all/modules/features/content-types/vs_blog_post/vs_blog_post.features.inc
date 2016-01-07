@@ -30,6 +30,30 @@ function vs_blog_post_views_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_image_default_styles().
+ */
+function vs_blog_post_image_default_styles() {
+  $styles = array();
+
+  // Exported image style: blog_thumbnail.
+  $styles['blog_thumbnail'] = array(
+    'label' => 'Blog Thumbnail',
+    'effects' => array(
+      13 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 705,
+          'height' => 205,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  return $styles;
+}
+
+/**
  * Implements hook_node_info().
  */
 function vs_blog_post_node_info() {
