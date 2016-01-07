@@ -23,6 +23,7 @@ features[image][] = slider_large
 features[image][] = slider_medium
 features[image][] = slider_small
 features[image][] = slider_wide
+features[image][] = square_300x300
 features[picture_mapping][] = slider_settings
 features[views_view][] = slider
 features_exclude[dependencies][ctools] = ctools

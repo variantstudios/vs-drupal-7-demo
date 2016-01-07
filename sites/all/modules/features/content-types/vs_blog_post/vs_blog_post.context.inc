@@ -26,11 +26,11 @@ function vs_blog_post_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views-blog-block' => array(
+        'views-blog-block_1' => array(
           'module' => 'views',
-          'delta' => 'blog-block',
-          'region' => 'content',
-          'weight' => '-9',
+          'delta' => 'blog-block_1',
+          'region' => 'preface',
+          'weight' => '-10',
         ),
       ),
     ),

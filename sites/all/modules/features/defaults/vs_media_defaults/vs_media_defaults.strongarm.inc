@@ -105,8 +105,8 @@ function vs_media_defaults_strongarm() {
   $strongarm->name = 'media_wysiwyg_wysiwyg_browser_plugins';
   $strongarm->value = array(
     0 => 'upload',
-    1 => 'media_default--media_browser_1',
-    2 => 'media_default--media_browser_my_files',
+    1 => 'media_browser_plus--media_browser_thumbnails',
+    2 => 'media_browser_plus--media_browser_my_files',
     3 => 'media_internet',
   );
   $export['media_wysiwyg_wysiwyg_browser_plugins'] = $strongarm;

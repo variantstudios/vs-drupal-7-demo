@@ -8,6 +8,7 @@ dependencies[] = ctools
 dependencies[] = features
 dependencies[] = image
 dependencies[] = media
+dependencies[] = media_browser_plus
 dependencies[] = media_bulk_upload
 dependencies[] = media_internet
 dependencies[] = media_wysiwyg

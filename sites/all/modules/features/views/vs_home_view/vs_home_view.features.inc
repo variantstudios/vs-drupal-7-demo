@@ -95,5 +95,20 @@ function vs_home_view_image_default_styles() {
     ),
   );
 
+  // Exported image style: square_300x300.
+  $styles['square_300x300'] = array(
+    'label' => 'Square (300x300)',
+    'effects' => array(
+      12 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 300,
+          'height' => 300,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   return $styles;
 }

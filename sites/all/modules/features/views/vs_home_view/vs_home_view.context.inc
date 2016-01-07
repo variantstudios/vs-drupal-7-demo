@@ -38,6 +38,12 @@ function vs_home_view_context_default_contexts() {
           'region' => 'content',
           'weight' => '-10',
         ),
+        'views-gallery-block_1' => array(
+          'module' => 'views',
+          'delta' => 'gallery-block_1',
+          'region' => 'footer',
+          'weight' => '-10',
+        ),
       ),
     ),
   );
