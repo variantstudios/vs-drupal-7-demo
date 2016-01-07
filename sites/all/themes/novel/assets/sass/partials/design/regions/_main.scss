@@ -3,3 +3,18 @@ main {
   background: $main-bg url('../images/main-bg.jpg') repeat;
   padding: 2em 0;
 }
+
+.not-front {
+  main {
+    .wrap {
+      margin-top: -17em;
+    }
+  }
+
+}
+
+.front {
+  main {
+    margin-top: 630px;
+  }
+}

@@ -1,17 +1,17 @@
 nav {
-  background: $nav-bg;
   font-family: $heading-font-family;
-  padding: 1em 2em;
+  padding: 2em 0em 0; 
   font-size: 110%;
+  text-align: right;
   @include breakpoint($tablet, $no-query: '.no-mq') {
-    font-size: 130%;  
+    font-size: 110%;  
   }
   ul.menu {
     margin: 1em 0 0;
     padding: 0;
     position: relative;
     @include breakpoint($tablet, $no-query: '.no-mq') {
-      text-align: center;
+      text-align: right;
       margin: 0;
       ul {
         position: absolute;

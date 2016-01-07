@@ -21,6 +21,8 @@ regions[footer] = 'Footer'
 ; Stylesheets
 ; ========================================
 
+stylesheets[all][1] = 'assets/css/unslider.css'
+stylesheets[all][0] = 'assets/css/unslider-dots.css'
 stylesheets[all][0] = 'assets/css/style.css'
 stylesheets[print][0] = 'assets/css/print.css'
 
@@ -30,6 +32,7 @@ stylesheets[print][0] = 'assets/css/print.css'
 
 scripts[] = 'assets/js/modernizr.min.js'
 scripts[] = 'assets/js/picturefill.min.js'
+scripts[] = 'assets/js/unslider-min.js'
 scripts[] = 'assets/js/scripts.js'
 
 ; ========================================

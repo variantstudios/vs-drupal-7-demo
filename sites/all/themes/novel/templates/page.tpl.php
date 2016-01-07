@@ -2,8 +2,10 @@
   <div class="wrap">
     <!-- Logo -->
     <picture class="logo">
-      <source type="image/svg+xml" srcset="/sites/all/themes/novel/assets/images/logos/logo.svg">
-      <img src="/sites/all/themes/novel/assets/images/logos/logo.png" alt="Put the site name here">
+      <a href="/" title="Home">
+        <source type="image/svg+xml" srcset="/sites/all/themes/novel/assets/images/logos/logo.svg">
+        <img src="/sites/all/themes/novel/assets/images/logos/logo.png" alt="Put the site name here">
+      </a>
     </picture>
 
     <!-- Main Navigation -->
@@ -19,10 +21,8 @@
 
 <?php if ($page['preface']): ?>
   <div class="preface cleafix">
-    <div class="wrap">
       <?php print render($page['preface']); ?>
     </div>
-  </div>
 <?php endif; ?>
 
 <!-- Close Preface -->

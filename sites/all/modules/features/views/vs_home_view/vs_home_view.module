@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Home View feature.
+ */
+
+include_once 'vs_home_view.features.inc';

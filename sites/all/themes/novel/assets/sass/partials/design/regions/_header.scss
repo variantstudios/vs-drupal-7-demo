@@ -12,3 +12,11 @@ header.site-header {
     @include grid-span(4, 9);
   }
 }
+
+.not-front {
+  header.site-header {
+    background: url('../images/header-subpages.jpg');
+    height: 415px;
+  }
+
+}

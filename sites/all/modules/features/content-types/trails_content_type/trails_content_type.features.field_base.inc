@@ -10,6 +10,31 @@
 function trails_content_type_field_default_field_bases() {
   $field_bases = array();
 
+  // Exported field_base: 'field_add_to_slider'.
+  $field_bases['field_add_to_slider'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_add_to_slider',
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => '',
+        1 => 'Yes',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_boolean',
+  );
+
   // Exported field_base: 'field_amenities'.
   $field_bases['field_amenities'] = array(
     'active' => 1,
@@ -83,6 +108,25 @@ function trails_content_type_field_default_field_bases() {
     'type' => 'text',
   );
 
+  // Exported field_base: 'field_distance_miles'.
+  $field_bases['field_distance_miles'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_distance_miles',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'number',
+    'settings' => array(
+      'decimal_separator' => '.',
+      'precision' => 10,
+      'scale' => 1,
+    ),
+    'translatable' => 0,
+    'type' => 'number_decimal',
+  );
+
   // Exported field_base: 'field_elevation_gain'.
   $field_bases['field_elevation_gain'] = array(
     'active' => 1,
@@ -102,6 +146,31 @@ function trails_content_type_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'text',
+  );
+
+  // Exported field_base: 'field_featured_trail'.
+  $field_bases['field_featured_trail'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_featured_trail',
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => '',
+        1 => 'Yes',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_boolean',
   );
 
   // Exported field_base: 'field_images'.
@@ -200,6 +269,23 @@ function trails_content_type_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'taxonomy_term_reference',
+  );
+
+  // Exported field_base: 'field_star_rating'.
+  $field_bases['field_star_rating'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_star_rating',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'fivestar',
+    'settings' => array(
+      'axis' => 'vote',
+    ),
+    'translatable' => 0,
+    'type' => 'fivestar',
   );
 
   // Exported field_base: 'field_start_elevation'.
