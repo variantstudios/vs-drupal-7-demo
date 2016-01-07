@@ -90,6 +90,13 @@ function vs_performance_defaults_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'entitycache_enabled';
+  $strongarm->value = TRUE;
+  $export['entitycache_enabled'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'imageapi_optimize_advdef';
   $strongarm->value = array(
     'status' => 0,

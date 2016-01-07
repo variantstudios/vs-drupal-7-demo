@@ -30,6 +30,7 @@ features[variable][] = advagg_js_compressor
 features[variable][] = cache
 features[variable][] = cache_class_cache_ctools_css
 features[variable][] = cache_lifetime
+features[variable][] = entitycache_enabled
 features[variable][] = image_jpeg_quality
 features[variable][] = image_toolkit
 features[variable][] = imageapi_optimize_advdef
