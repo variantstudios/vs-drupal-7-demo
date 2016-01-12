@@ -1,91 +1,88 @@
 <?php
 /**
  * @file
- * vs_static_page_content_type.features.field_instance.inc
+ * vs_team_content_type.features.field_instance.inc
  */
 
 /**
  * Implements hook_field_default_field_instances().
  */
-function vs_static_page_content_type_field_default_field_instances() {
+function vs_team_content_type_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-page-body'.
-  $field_instances['node-page-body'] = array(
-    'bundle' => 'page',
+  // Exported field_instance: 'node-vs_team-field_bio'.
+  $field_instances['node-vs_team-field_bio'] = array(
+    'bundle' => 'vs_team',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'teaser' => array(
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 2,
       ),
-      'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'ellipsis' => FALSE,
-          'trim_length' => 600,
-          'word_boundary' => FALSE,
-        ),
-        'type' => 'text_summary_or_trimmed',
-        'weight' => 0,
-      ),
     ),
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
-    'fences_wrapper' => 'div',
-    'field_name' => 'body',
-    'label' => 'Body',
+    'field_name' => 'field_bio',
+    'label' => 'Bio',
     'required' => 0,
     'settings' => array(
-      'display_summary' => 0,
-      'text_processing' => 1,
+      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'rows' => 20,
-        'summary_rows' => 5,
+        'rows' => 4,
       ),
-      'type' => 'text_textarea_with_summary',
-      'weight' => 2,
+      'type' => 'text_textarea',
+      'weight' => 1,
     ),
   );
 
-  // Exported field_instance: 'node-page-field_static_header_image'.
-  $field_instances['node-page-field_static_header_image'] = array(
-    'bundle' => 'page',
+  // Exported field_instance: 'node-vs_team-field_headshot'.
+  $field_instances['node-vs_team-field_headshot'] = array(
+    'bundle' => 'vs_team',
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 1,
+      ),
+      'teaser' => array(
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => 'full_width',
+          'image_style' => 'square_300x300',
         ),
         'type' => 'image',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
         'weight' => 0,
       ),
     ),
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
-    'field_name' => 'field_static_header_image',
-    'label' => 'Header Image',
+    'field_name' => 'field_headshot',
+    'label' => 'Headshot',
     'required' => 0,
     'settings' => array(
       'alt_field' => 0,
@@ -108,7 +105,7 @@ function vs_static_page_content_type_field_default_field_instances() {
             'slashes' => 0,
             'transliterate' => 0,
           ),
-          'value' => '',
+          'value' => 'headshots',
         ),
         'redirect' => FALSE,
         'retroactive_update' => 0,
@@ -143,14 +140,14 @@ function vs_static_page_content_type_field_default_field_instances() {
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 3,
+      'weight' => 2,
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Body');
-  t('Header Image');
+  t('Bio');
+  t('Headshot');
 
   return $field_instances;
 }

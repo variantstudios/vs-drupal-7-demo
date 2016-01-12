@@ -14,6 +14,11 @@
     $('html').addClass('no-mq');
   };
   
+  if ($(".header-image-static")[0]){
+    $('body').addClass('header-image-static-exsists');
+  } else {
+      // Do something if class does not exist
+  }
   
   $('.slider').unslider({
     autoplay: true 
