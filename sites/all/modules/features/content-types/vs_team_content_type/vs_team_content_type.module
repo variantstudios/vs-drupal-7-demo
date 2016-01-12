@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Team Content Type feature.
+ */
+
+include_once 'vs_team_content_type.features.inc';

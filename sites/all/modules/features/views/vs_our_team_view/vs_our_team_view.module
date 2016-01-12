@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Our Team View feature.
+ */
+
+include_once 'vs_our_team_view.features.inc';
