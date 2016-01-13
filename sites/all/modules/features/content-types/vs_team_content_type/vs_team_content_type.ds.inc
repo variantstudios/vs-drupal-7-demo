@@ -22,15 +22,26 @@ function vs_team_content_type_ds_field_settings_info() {
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
-        'link' => '1',
-        'wrapper' => 'h3',
+        'link' => '0',
+        'wrapper' => 'h4',
         'class' => '',
-        'ft' => array(),
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+        ),
+      ),
+    ),
+    'field_bio' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+        ),
       ),
     ),
     'field_headshot' => array(
       'formatter_settings' => array(
-        'ft' => array(),
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+        ),
       ),
     ),
   );

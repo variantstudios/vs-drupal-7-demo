@@ -26,11 +26,11 @@ function vs_home_view_views_default_views() {
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['query']['options']['distinct'] = TRUE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '4';
-  $handler->display->display_options['style_plugin'] = 'list';
-  $handler->display->display_options['style_options']['wrapper_class'] = 'slider';
+  $handler->display->display_options['style_plugin'] = 'flexslider';
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
   /* Field: Content: Images */
@@ -41,11 +41,12 @@ function vs_home_view_views_default_views() {
   $handler->display->display_options['fields']['field_images']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_images']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_images']['settings'] = array(
-    'image_style' => 'slider_large',
-    'image_link' => '',
+    'image_style' => 'slider_wide',
+    'image_link' => 'content',
   );
   $handler->display->display_options['fields']['field_images']['delta_limit'] = '1';
   $handler->display->display_options['fields']['field_images']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_images']['field_api_classes'] = TRUE;
   /* Field: Content: Region */
   $handler->display->display_options['fields']['field_region']['id'] = 'field_region';
   $handler->display->display_options['fields']['field_region']['table'] = 'field_data_field_region';
@@ -60,6 +61,7 @@ function vs_home_view_views_default_views() {
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['title']['alter']['text'] = '<div class="slider-caption">
 <h6>[field_region]</h6>
@@ -98,6 +100,14 @@ function vs_home_view_views_default_views() {
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'flexslider';
+  $handler->display->display_options['style_options']['captionfield'] = 'title';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
   $export['slider'] = $view;
 
   return $export;

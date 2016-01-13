@@ -20,9 +20,9 @@
       // Do something if class does not exist
   }
   
-  $('.slider').unslider({
-    autoplay: true 
-  });
+  // $('.slider').unslider({
+  //   autoplay: true 
+  // });
 
   $('.open-gallery-filter').click(function() {
     $('.gallery .view-filters').toggleClass('opened');

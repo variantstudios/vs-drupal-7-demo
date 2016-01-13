@@ -4,11 +4,11 @@ main {
   padding: 2em 0;
 }
 
-.page-trails, .node-type-trails, .page-gallery, .node-type-gallery {
-  main {
-    .wrap {
-      margin-top: -17em;
-    }
+main.no-preface  {
+  .wrap {
+    margin-top: -17em;
+    position: relative;
+    z-index: 3;
   }
-
 }
+

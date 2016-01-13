@@ -52,7 +52,7 @@
     <script src="<?php print $GLOBALS['base_url'] . '/' . drupal_get_path('theme', 'novel'); ?>/htmlshim/dist/html5shiv.js"></script>
     <![endif]-->
   </head>
-  <body class="<?php print $classes; ?>">
+  <body class="<?php print $classes; ?> ">
     <div id="skip-link">
       <a href="#main" class="element-invisible element-focusable" role="link"><?php print t('Skip to main content'); ?></a>
     </div>

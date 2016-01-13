@@ -1,4 +1,4 @@
-<header class="site-header" role="banner">
+<header class="site-header <?php if(empty ($page['preface']) ): ?>no-preface<?php endif; ?> " role="banner">
   <div class="wrap">
     <!-- Logo -->
     <picture class="logo">
@@ -26,7 +26,7 @@
 <?php endif; ?>
 
 <!-- Close Preface -->
-<main id="content">
+<main id="content" class="<?php if(empty ($page['preface']) ): ?>no-preface<?php endif; ?> ">
   <div class="wrap">
     <?php if ($page['help']): ?>
         <?php print render($page['help']); ?>

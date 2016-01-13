@@ -83,6 +83,7 @@ nav {
   a, a:visited {
     color: #fff;
     text-decoration: none;
+    text-shadow: 0px 1px 4px rgba(0,0,0,0.75);
     &.active {
       color: #fff;
       @include breakpoint($tablet, $no-query: '.no-mq') {
