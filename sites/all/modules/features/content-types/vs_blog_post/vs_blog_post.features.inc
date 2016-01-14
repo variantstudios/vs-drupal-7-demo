@@ -35,6 +35,21 @@ function vs_blog_post_views_api($module = NULL, $api = NULL) {
 function vs_blog_post_image_default_styles() {
   $styles = array();
 
+  // Exported image style: blog_home_page.
+  $styles['blog_home_page'] = array(
+    'label' => 'Blog Home Page',
+    'effects' => array(
+      15 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 520,
+          'height' => 235,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   // Exported image style: blog_thumbnail.
   $styles['blog_thumbnail'] = array(
     'label' => 'Blog Thumbnail',

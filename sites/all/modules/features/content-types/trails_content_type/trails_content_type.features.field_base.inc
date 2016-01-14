@@ -27,7 +27,7 @@ function trails_content_type_field_default_field_bases() {
     'settings' => array(
       'allowed_values' => array(
         0 => '',
-        1 => 'Yes',
+        1 => 'Add to Slider',
       ),
       'allowed_values_function' => '',
     ),
@@ -165,7 +165,7 @@ function trails_content_type_field_default_field_bases() {
     'settings' => array(
       'allowed_values' => array(
         0 => '',
-        1 => 'Yes',
+        1 => 'This is a Featured Trail',
       ),
       'allowed_values_function' => '',
     ),
