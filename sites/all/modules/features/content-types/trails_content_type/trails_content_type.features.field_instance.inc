@@ -93,7 +93,7 @@ function trails_content_type_field_default_field_instances() {
         'display_label' => 0,
       ),
       'type' => 'options_onoff',
-      'weight' => 12,
+      'weight' => 11,
     ),
   );
 
@@ -131,7 +131,7 @@ function trails_content_type_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 11,
+      'weight' => 13,
     ),
   );
 
@@ -304,7 +304,7 @@ function trails_content_type_field_default_field_instances() {
   // Exported field_instance: 'node-trails-field_featured_trail'.
   $field_instances['node-trails-field_featured_trail'] = array(
     'bundle' => 'trails',
-    'default_value' => NULL,
+    'default_value' => array(),
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -332,9 +332,11 @@ function trails_content_type_field_default_field_instances() {
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 13,
+      'settings' => array(
+        'display_label' => 0,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 12,
     ),
   );
 

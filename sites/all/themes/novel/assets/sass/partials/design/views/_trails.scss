@@ -72,7 +72,7 @@
 
 .node-trails.node-teaser {
   .section-one {
-    h2, .field-name-field-region, .field-name-field-star-rating {
+    h3, .field-name-field-region, .field-name-field-star-rating {
       @include breakpoint($tablet, $no-query: '.no-mq') {
         display: inline-block;
         padding-right: 1em;

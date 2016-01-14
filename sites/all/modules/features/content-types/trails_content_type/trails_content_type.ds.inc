@@ -124,16 +124,11 @@ function trails_content_type_ds_field_settings_info() {
       'format' => 'default',
       'formatter_settings' => array(
         'link' => '1',
-        'wrapper' => 'h2',
+        'wrapper' => 'h3',
         'class' => '',
         'ft' => array(
           'func' => 'theme_ds_field_expert',
         ),
-      ),
-    ),
-    'field_star_rating' => array(
-      'formatter_settings' => array(
-        'ft' => array(),
       ),
     ),
   );

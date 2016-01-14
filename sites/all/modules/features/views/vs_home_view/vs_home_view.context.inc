@@ -38,11 +38,23 @@ function vs_home_view_context_default_contexts() {
           'region' => 'content',
           'weight' => '-10',
         ),
+        'views-trails-block_3' => array(
+          'module' => 'views',
+          'delta' => 'trails-block_3',
+          'region' => 'content',
+          'weight' => '-9',
+        ),
         'views-gallery-block_1' => array(
           'module' => 'views',
           'delta' => 'gallery-block_1',
           'region' => 'footer',
           'weight' => '-10',
+        ),
+        'views-blog-block_2' => array(
+          'module' => 'views',
+          'delta' => 'blog-block_2',
+          'region' => 'footer',
+          'weight' => '-9',
         ),
       ),
     ),
