@@ -6,9 +6,12 @@ main {
 
 main.no-preface  {
   .wrap {
-    margin-top: -17em;
+    //margin-top: -17em;
     position: relative;
     z-index: 3;
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+      margin-top: -17em;
+    }
   }
 }
 

@@ -1,7 +1,9 @@
 header.site-header {
   @include clearfix;
-    position: relative;
+  position: relative;
+  @include breakpoint($tablet, $no-query: '.no-mq') {
     z-index: 2;
+  }
 }
 .logo {
   @include breakpoint($tablet, $no-query: '.no-mq') {
@@ -11,11 +13,25 @@ header.site-header {
 
 .main-nav {
   @include breakpoint($tablet, $no-query: '.no-mq') {
-    @include grid-span(4, 9);
+    @include grid-span(6, 7);
   }
 }
 
 header.site-header.no-preface {
   background: url('../images/header-subpages.jpg');
-  height: 415px;
+  padding: 2em 0 2em;
+  @include breakpoint($tablet, $no-query: '.no-mq') {
+    z-index: 2;
+    height: 415px;
+    padding:0;
+  }
+
+  
+}
+
+header.site-header {
+  @include breakpoint($phone) {
+    background: url('../images/header-subpages.jpg');
+    padding: 2em 0 2em;
+  }
 }
